@@ -1,6 +1,6 @@
-robt310_project2_dither('puppy.jpg', 'output2.png', 1)
+dither('puppy.jpg', 'output2.png', 1)
 
-function f = robt310_project2_dither(input_file_name, output_file_name, part)
+function f = dither(input_file_name, output_file_name, part)
     if part == 0
         img = imread(input_file_name);
         a=rgb2gray(img);
